@@ -1,0 +1,489 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                     NLTK API — CATEGORIZED REFERENCE                       ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ 1.  TEXT PREPROCESSING & TOKENIZATION          Package: nltk.tokenize
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Sentence/Word tokenizers
+    · sent_tokenize()            · word_tokenize()
+    · PunktSentenceTokenizer     · NLTKWordTokenizer
+
+  Specialized tokenizers
+    · TweetTokenizer             · RegexpTokenizer
+    · MWETokenizer               · TreebankWordTokenizer
+    · NISTTokenizer              · ToktokTokenizer
+
+  Syllable tokenizers
+    · LegalitySyllableTokenizer  · SyllableTokenizer
+
+  Utilities
+    · align_tokens()             · regexp_span_tokenize()
+    · TreebankWordDetokenizer
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ 2.  STEMMING & LEMMATIZATION                   Package: nltk.stem
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Stemmers
+    · PorterStemmer              · LancasterStemmer
+    · SnowballStemmer            · ISRIStemmer
+    · ARLSTem                    · ARLSTem2
+    · Cistem                     · RSLPStemmer
+    · RegexpStemmer
+
+  Multilingual Snowball stemmers
+    · ArabicStemmer              · FrenchStemmer
+    · GermanStemmer              · SpanishStemmer
+    · ItalianStemmer             · PortugueseStemmer
+    · (+ 9 more languages)
+
+  Lemmatizer
+    · WordNetLemmatizer
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ 3.  PART-OF-SPEECH TAGGING                     Package: nltk.tag
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Taggers
+    · PerceptronTagger           · HiddenMarkovModelTagger
+    · BrillTagger                · CRFTagger
+    · TnT
+
+  Sequential taggers
+    · UnigramTagger              · BigramTagger
+    · TrigramTagger              · AffixTagger
+    · DefaultTagger              · RegexpTagger
+
+  External taggers  (⚠ require external tools)
+    · StanfordPOSTagger          · HunposTagger
+    · SennaTagger
+
+  Utilities
+    · pos_tag()                  · pos_tag_sents()
+    · map_tag()                  · str2tuple()
+    · tuple2str()
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ 4.  CHUNKING & NAMED ENTITY RECOGNITION        Package: nltk.chunk
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Chunkers
+    · RegexpChunkParser          · RegexpParser
+    · NEChunkParser
+
+  Chunk rules
+    · ChunkRule                  · MergeRule
+    · SplitRule                  · ExpandLeftRule
+    · ExpandRightRule            · UnChunkRule
+
+  NE chunking
+    · ne_chunk()                 · ne_chunk_sents()
+    · Maxent_NE_Chunker
+
+  Utilities
+    · conllstr2tree()            · tree2conllstr()
+    · conlltags2tree()           · ChunkScore
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ 5.  PARSING                                    Package: nltk.parse
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Chart parsers
+    · ChartParser                · BottomUpChartParser
+    · TopDownChartParser         · EarleyChartParser
+    · FeatureChartParser
+
+  Probabilistic parsers
+    · ViterbiParser              · InsideChartParser
+    · BottomUpProbabilisticChartParser
+
+  Dependency parsers
+    · ProjectiveDependencyParser · NonprojectiveDependencyParser
+    · MaltParser  (⚠ Java)      · StanfordDependencyParser  (⚠ Java)
+
+  Other parsers
+    · RecursiveDescentParser     · ShiftReduceParser
+    · BllipParser  (⚠ C++)      · CoreNLPParser  (⚠ Java)
+
+  Grammar generation
+    · generate()
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ 6.  GRAMMAR & FORMAL LANGUAGES        Module: nltk.grammar | Package: nltk.ccg
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Grammar types
+    · CFG                        · PCFG
+    · DependencyGrammar          · ProbabilisticDependencyGrammar
+
+  Productions
+    · Production                 · ProbabilisticProduction
+    · Nonterminal
+
+  CCG — Combinatory Categorial Grammar
+    · CCGChartParser             · CCGLexicon
+    · FunctionalCategory         · PrimitiveCategory
+
+  CCG combinators
+    · ForwardCombinator          · BackwardCombinator
+    · UndirectedComposition
+
+  Utilities
+    · induce_pcfg()              · read_grammar()
+    · nonterminals()
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ 7.  CLASSIFICATION                             Package: nltk.classify
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Classifiers
+    · NaiveBayesClassifier       · DecisionTreeClassifier
+    · MaxentClassifier           · PositiveNaiveBayesClassifier
+
+  External classifiers  (⚠ require extra tools)
+    · SklearnClassifier          · SvmClassifier
+    · WekaClassifier             · TadmMaxentClassifier
+
+  Utilities
+    · accuracy()                 · apply_features()
+    · log_likelihood()           · attested_labels()
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ 8.  CLUSTERING                                 Package: nltk.cluster
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Algorithms
+    · KMeansClusterer            · EMClusterer
+    · GAAClusterer
+
+  Distance metrics
+    · cosine_distance()          · euclidean_distance()
+
+  Base classes
+    · VectorSpaceClusterer       · ClusterI
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ 9.  LANGUAGE MODELS                            Package: nltk.lm
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Models
+    · MLE                        · Laplace
+    · Lidstone                   · StupidBackoff
+    · KneserNeyInterpolated      · WittenBellInterpolated
+    · AbsoluteDiscountingInterpolated
+
+  Smoothing
+    · KneserNey                  · WittenBell
+    · AbsoluteDiscounting
+
+  Data preparation
+    · padded_everygram_pipeline() · padded_everygrams()
+    · flatten()
+
+  Vocabulary & counting
+    · Vocabulary                 · NgramCounter
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ 10. SENTIMENT ANALYSIS                         Package: nltk.sentiment
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Analyzers
+    · SentimentIntensityAnalyzer (VADER)
+    · SentimentAnalyzer
+
+  Feature extraction
+    · extract_unigram_feats()    · extract_bigram_feats()
+    · mark_negation()
+
+  Demo functions
+    · demo_movie_reviews()       · demo_vader_tweets()
+    · demo_liu_hu_lexicon()
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ 11. SEMANTICS & LOGIC                          Package: nltk.sem
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Logic
+    · LogicParser                · LambdaExpression
+    · AllExpression              · ExistsExpression
+    · ApplicationExpression
+
+  DRT — Discourse Representation Theory
+    · DrtParser                  · DRS
+    · DrtExpression              · resolve_anaphora()
+
+  Model evaluation
+    · Model                      · Valuation
+    · Assignment                 · evaluate_sents()
+
+  Relation extraction
+    · extract_rels()             · tree2semi_rel()
+
+  Glue semantics
+    · Glue                       · GlueFormula
+    · DrtGlue
+
+  Boxer DRS  (⚠ requires external Boxer binary)
+    · Boxer                      · BoxerDrs
+    · BoxerDrsParser
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ 12. INFERENCE & THEOREM PROVING                Package: nltk.inference
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Provers  (⚠ require external binaries)
+    · Prover9                    · TableauProver
+    · ResolutionProver
+
+  Model builders
+    · Mace                       · ParallelProverBuilder
+
+  Discourse
+    · DiscourseTester            · CfgReadingCommand
+    · DrtGlueReadingCommand
+
+  Nonmonotonic reasoning
+    · ClosedWorldProver          · UniqueNamesProver
+    · ClosedDomainProver
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ 13. MACHINE TRANSLATION & EVALUATION           Package: nltk.translate
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  IBM alignment models
+    · IBMModel1                  · IBMModel2
+    · IBMModel3                  · IBMModel4
+    · IBMModel5
+
+  Translation scores
+    · corpus_bleu()              · sentence_bleu()
+    · corpus_chrf()              · corpus_nist()
+    · meteor_score()             · corpus_ribes()
+
+  Phrase-based
+    · PhraseTable                · phrase_extraction()
+    · StackDecoder
+
+  Alignment utilities
+    · AlignedSent                · Alignment
+    · grow_diag_final_and()
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ 14. METRICS & EVALUATION                       Package: nltk.metrics
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Scoring
+    · accuracy()                 · precision()
+    · recall()                   · f_measure()
+    · log_likelihood()
+
+  Distance measures
+    · edit_distance()            · jaccard_distance()
+    · jaro_similarity()          · jaro_winkler_similarity()
+    · masi_distance()            · binary_distance()
+
+  Agreement
+    · AnnotationTask             (inter-annotator agreement)
+
+  Segmentation
+    · pk()                       · windowdiff()
+    · ghd()
+
+  Association measures
+    · BigramAssocMeasures        · TrigramAssocMeasures
+    · NgramAssocMeasures         · QuadgramAssocMeasures
+
+  Confusion matrix
+    · ConfusionMatrix
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ 15. CORPUS ACCESS                              Package: nltk.corpus
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Loader
+    · LazyCorpusLoader
+
+  Utility
+    · demo()
+
+  Built-in corpora available (partial list)
+    · brown          · gutenberg      · inaugural
+    · movie_reviews  · treebank       · conll2000
+    · wordnet        · names          · stopwords
+    · webtext        · reuters        · nps_chat
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ 16. PROBABILITY & STATISTICS                   Module: nltk.probability
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Frequency distributions
+    · FreqDist                   · ConditionalFreqDist
+
+  Probability distributions
+    · MLEProbDist                · LaplaceProbDist
+    · LidstoneProbDist           · KneserNeyProbDist
+    · WittenBellProbDist         · SimpleGoodTuringProbDist
+    · HeldoutProbDist            · CrossValidationProbDist
+
+  Conditional probability
+    · ConditionalProbDist        · DictionaryConditionalProbDist
+
+  Utilities
+    · entropy()                  · log_likelihood()
+    · add_logs()                 · sum_logs()
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ 17. TREE STRUCTURES                            Package: nltk.tree
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Tree types
+    · Tree                       · ProbabilisticTree
+    · ImmutableTree              · ParentedTree
+    · MultiParentedTree
+
+  Transforms
+    · chomsky_normal_form()      · collapse_unary()
+    · un_chomsky_normal_form()
+
+  Pretty printing
+    · TreePrettyPrinter
+
+  Parsing
+    · bracket_parse()            · sinica_parse()
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ 18. COLLOCATIONS                               Module: nltk.collocations
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+    · BigramCollocationFinder
+    · TrigramCollocationFinder
+    · QuadgramCollocationFinder
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ 19. TEXT ANALYSIS                              Module: nltk.text
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Text exploration
+    · Text                       (concordance, similar, dispersion_plot,
+                                  collocations, generate)
+
+  Indexing
+    · ConcordanceIndex           · ContextIndex
+    · TokenSearcher
+
+  TF-IDF
+    · TextCollection             (tf(), idf(), tf_idf())
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ 20. CHAT / DIALOGUE SYSTEMS                    Package: nltk.chat
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Built-in chatbots
+    · eliza_chat()               · iesha_chat()
+    · rude_chat()                · zen_chat()
+    · suntsu_chat()
+
+  Base class
+    · Chat
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ 21. DATA & DOWNLOADER                 Module: nltk.data | nltk.downloader
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Downloader
+    · Downloader                 · DownloaderGUI
+    · DownloaderShell            · download()
+
+  Data loading
+    · load()                     · find()
+    · retrieve()                 · clear_cache()
+
+  Path pointers
+    · FileSystemPathPointer      · GzipFileSystemPathPointer
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ 22. DRAWING & VISUALIZATION   ❌ (Tkinter — not available in Streamlit)
+     Package: nltk.draw
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Tree visualization
+    · TreeWidget                 · TreeView
+    · draw_trees()
+
+  Grammar editor
+    · CFGEditor                  · CFGDemo
+
+  Dispersion plot
+    · dispersion_plot()
+
+  Canvas utilities
+    · CanvasFrame                · CanvasWidget
+    · Table
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ 23. APPLICATIONS (GUI TOOLS)  ❌ (Tkinter — not available in Streamlit)
+     Package: nltk.app
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+    · chartparser_app            · chunkparser_app
+    · collocations_app           · concordance_app
+    · rdparser_app               · srparser_app
+    · wordfreq_app               · wordnet_app
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ 24. UTILITIES & MISC                  Modules: nltk.util | nltk.misc | nltk.collections
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  N-grams
+    · bigrams()                  · trigrams()
+    · ngrams()                   · everygrams()
+    · skipgrams()
+
+  Data structures
+    · Trie                       · LazyMap
+    · LazyConcatenation          · Index
+
+  Graph utilities
+    · breadth_first()            · transitive_closure()
+    · unweighted_minimum_spanning_tree()
+
+  Misc
+    · MinimalSet                 · generate_chomsky()
+    · babelize_shell()
+
+
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                            SUMMARY TABLE                                   ║
+╠══════════════════╦═══════════════════════════════╦══════════════════════════╣
+║ Category         ║ Key Package / Module          ║ Primary Use              ║
+╠══════════════════╬═══════════════════════════════╬══════════════════════════╣
+║ Tokenization     ║ nltk.tokenize                 ║ Split text into tokens   ║
+║ Stemming/Lemma   ║ nltk.stem                     ║ Reduce words to roots    ║
+║ POS Tagging      ║ nltk.tag                      ║ Label grammatical roles  ║
+║ Chunking/NER     ║ nltk.chunk                    ║ Extract entities/phrases ║
+║ Parsing          ║ nltk.parse                    ║ Syntactic tree building  ║
+║ Grammar          ║ nltk.grammar, nltk.ccg        ║ Formal grammar handling  ║
+║ Classification   ║ nltk.classify                 ║ Text categorization      ║
+║ Clustering       ║ nltk.cluster                  ║ Unsupervised grouping    ║
+║ Language Models  ║ nltk.lm                       ║ N-gram probability       ║
+║ Sentiment        ║ nltk.sentiment                ║ Opinion/emotion detect   ║
+║ Semantics        ║ nltk.sem                      ║ Logical meaning repr.    ║
+║ Inference        ║ nltk.inference                ║ Theorem proving          ║
+║ Translation      ║ nltk.translate                ║ MT alignment & scoring   ║
+║ Metrics          ║ nltk.metrics                  ║ Evaluation & distance    ║
+║ Corpus           ║ nltk.corpus                   ║ Access built-in datasets ║
+║ Probability      ║ nltk.probability              ║ Freq & probability dists ║
+║ Trees            ║ nltk.tree                     ║ Parse tree manipulation  ║
+║ Collocations     ║ nltk.collocations             ║ Word co-occurrence       ║
+║ Text Analysis    ║ nltk.text                     ║ Concordance, TF-IDF      ║
+║ Chat             ║ nltk.chat                     ║ Rule-based chatbots      ║
+║ Data/Download    ║ nltk.data, nltk.downloader    ║ Load/download resources  ║
+║ Visualization ❌ ║ nltk.draw                     ║ GUI tree/grammar display ║
+║ Applications  ❌ ║ nltk.app                      ║ Interactive GUI demos    ║
+║ Utilities        ║ nltk.util, nltk.misc          ║ N-grams, graphs, helpers ║
+╚══════════════════╩═══════════════════════════════╩══════════════════════════╝
+
+  ❌ = Not available inside Streamlit (requires Tkinter desktop GUI)
+  ⚠  = Requires external tool (Java, C++ binary, or API credentials)

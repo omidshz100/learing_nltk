@@ -1,0 +1,33 @@
+🟢 Learn Now (Beginner)
+Topics we are working on today:
+
+| #  | Section                  |
+|----|--------------------------|
+| 1  | Tokenization             |
+| 2  | Stemming & Lemmatization |
+| 3  | POS Tagging              |
+| 4  | NER & Chunking           |
+| 16 | Frequency Distribution   |
+| 10 | Sentiment Analysis       |
+
+🟡 Learn Later (Intermediate)
+
+| #  | Section                  |
+|----|--------------------------|
+| 7  | Classification (Naive Bayes) |
+| 15 | Corpus Access            |
+| 18 | Collocations             |
+| 19 | Text Analysis / TF-IDF   |
+| 14 | Metrics & Evaluation     |
+
+🔴 Advanced / Not Needed Now
+
+| #  | Section         |
+|----|-----------------|
+| 5  | Parsing         |
+| 6  | Grammar         |
+| 8  | Clustering      |
+| 9  | Language Models |
+| 11 | Semantics       |
+| 12 | Inference       |
+| 13 | Translation     |

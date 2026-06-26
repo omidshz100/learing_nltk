@@ -1,0 +1,2035 @@
+nltk.app package
+Submodules
+nltk.app.chartparser_app module
+app()
+nltk.app.chunkparser_app module
+app()
+nltk.app.collocations_app module
+app()
+nltk.app.concordance_app module
+app()
+nltk.app.nemo_app module
+app()
+nltk.app.rdparser_app module
+app()
+nltk.app.srparser_app module
+app()
+nltk.app.wordfreq_app module
+nltk.app.wordnet_app module
+app()
+Module contents
+nltk.ccg package
+Submodules
+nltk.ccg.api module
+AbstractCCGCategory
+CCGVar
+Direction
+FunctionalCategory
+PrimitiveCategory
+nltk.ccg.chart module
+BackwardTypeRaiseRule
+BinaryCombinatorRule
+CCGChart
+CCGChartParser
+CCGEdge
+CCGLeafEdge
+ForwardTypeRaiseRule
+compute_semantics()
+demo()
+printCCGDerivation()
+printCCGTree()
+nltk.ccg.combinator module
+BackwardCombinator
+DirectedBinaryCombinator
+ForwardCombinator
+UndirectedBinaryCombinator
+UndirectedComposition
+UndirectedFunctionApplication
+UndirectedSubstitution
+UndirectedTypeRaise
+backwardBxConstraint()
+backwardOnly()
+backwardSxConstraint()
+backwardTConstraint()
+bothBackward()
+bothForward()
+crossedDirs()
+forwardOnly()
+forwardSConstraint()
+forwardTConstraint()
+innermostFunction()
+nltk.ccg.lexicon module
+CCGLexicon
+Token
+augParseCategory()
+fromstring()
+matchBrackets()
+nextCategory()
+parseApplication()
+parsePrimitiveCategory()
+parseSubscripts()
+nltk.ccg.logic module
+compute_composition_semantics()
+compute_function_semantics()
+compute_substitution_semantics()
+compute_type_raised_semantics()
+Module contents
+nltk.chat package
+Submodules
+nltk.chat.eliza module
+demo()
+eliza_chat()
+nltk.chat.iesha module
+demo()
+iesha_chat()
+nltk.chat.rude module
+demo()
+rude_chat()
+nltk.chat.suntsu module
+demo()
+suntsu_chat()
+nltk.chat.util module
+Chat
+nltk.chat.zen module
+demo()
+zen_chat()
+Module contents
+chatbots()
+nltk.chunk package
+Submodules
+nltk.chunk.api module
+ChunkParserI
+nltk.chunk.named_entity module
+Maxent_NE_Chunker
+NEChunkParser
+NEChunkParserTagger
+build_model()
+cmp_chunks()
+load_ace_data()
+load_ace_file()
+postag_tree()
+shape()
+simplify_pos()
+nltk.chunk.regexp module
+ChunkRule
+ChunkRuleWithContext
+ChunkString
+ExpandLeftRule
+ExpandRightRule
+MergeRule
+RegexpChunkParser
+RegexpChunkRule
+RegexpParser
+SplitRule
+StripRule
+UnChunkRule
+demo()
+demo_eval()
+tag_pattern2re_pattern()
+nltk.chunk.util module
+ChunkScore
+accuracy()
+conllstr2tree()
+conlltags2tree()
+demo()
+ieerstr2tree()
+tagstr2tree()
+tree2conllstr()
+tree2conlltags()
+Module contents
+RegexpChunkParser
+RegexpChunkRules
+Efficiency
+Emacs Tip
+Unresolved Issues
+ne_chunk()
+ne_chunk_sents()
+ne_chunker()
+nltk.classify package
+Submodules
+nltk.classify.api module
+ClassifierI
+MultiClassifierI
+nltk.classify.decisiontree module
+DecisionTreeClassifier
+demo()
+f()
+nltk.classify.maxent module
+Terminology: ‘feature’
+BinaryMaxentFeatureEncoding
+ConditionalExponentialClassifier
+FunctionBackedMaxentFeatureEncoding
+GISEncoding
+MaxentClassifier
+MaxentFeatureEncodingI
+TadmEventMaxentFeatureEncoding
+TadmMaxentClassifier
+TypedMaxentFeatureEncoding
+calculate_deltas()
+calculate_empirical_fcount()
+calculate_estimated_fcount()
+calculate_nfmap()
+demo()
+load_maxent_params()
+maxent_pos_tagger()
+save_maxent_params()
+train_maxent_classifier_with_gis()
+train_maxent_classifier_with_iis()
+train_maxent_classifier_with_megam()
+nltk.classify.megam module
+call_megam()
+config_megam()
+parse_megam_weights()
+write_megam_file()
+nltk.classify.naivebayes module
+NaiveBayesClassifier
+demo()
+nltk.classify.positivenaivebayes module
+PositiveNaiveBayesClassifier
+demo()
+nltk.classify.rte_classify module
+RTEFeatureExtractor
+rte_classifier()
+rte_features()
+rte_featurize()
+nltk.classify.scikitlearn module
+SklearnClassifier
+nltk.classify.senna module
+Senna
+nltk.classify.svm module
+SvmClassifier
+nltk.classify.tadm module
+call_tadm()
+config_tadm()
+encoding_demo()
+names_demo()
+parse_tadm_weights()
+write_tadm_file()
+nltk.classify.textcat module
+TextCat
+demo()
+nltk.classify.util module
+CutoffChecker
+accuracy()
+apply_features()
+attested_labels()
+binary_names_demo_features()
+check_megam_config()
+log_likelihood()
+names_demo()
+names_demo_features()
+partial_names_demo()
+wsd_demo()
+nltk.classify.weka module
+ARFF_Formatter
+WekaClassifier
+config_weka()
+Module contents
+Features
+Featuresets
+Training Classifiers
+nltk.cluster package
+Submodules
+nltk.cluster.api module
+ClusterI
+nltk.cluster.em module
+EMClusterer
+demo()
+nltk.cluster.gaac module
+GAAClusterer
+demo()
+nltk.cluster.kmeans module
+KMeansClusterer
+demo()
+nltk.cluster.util module
+Dendrogram
+VectorSpaceClusterer
+cosine_distance()
+euclidean_distance()
+Module contents
+nltk.corpus package
+Subpackages
+nltk.corpus.reader package
+Submodules
+Module contents
+Submodules
+nltk.corpus.europarl_raw module
+nltk.corpus.util module
+LazyCorpusLoader
+Module contents
+Available Corpora
+Corpus Reader Functions
+demo()
+nltk.draw package
+Submodules
+nltk.draw.cfg module
+CFGDemo
+CFGEditor
+ProductionList
+demo()
+demo2()
+demo3()
+nltk.draw.dispersion module
+dispersion_plot()
+nltk.draw.table module
+MultiListbox
+Table
+demo()
+nltk.draw.tree module
+TreeSegmentWidget
+TreeView
+TreeWidget
+demo()
+draw_trees()
+tree_to_treesegment()
+nltk.draw.util module
+AbstractContainerWidget
+BoxWidget
+BracketWidget
+CanvasFrame
+CanvasWidget
+ColorizedList
+EntryDialog
+MutableOptionMenu
+OvalWidget
+ParenWidget
+ScrollWatcherWidget
+SequenceWidget
+ShowText
+SpaceWidget
+StackWidget
+SymbolWidget
+TextWidget
+demo()
+Module contents
+nltk.inference package
+Submodules
+nltk.inference.api module
+BaseModelBuilderCommand
+BaseProverCommand
+BaseTheoremToolCommand
+ModelBuilder
+ModelBuilderCommand
+ModelBuilderCommandDecorator
+ParallelProverBuilder
+ParallelProverBuilderCommand
+Prover
+ProverCommand
+ProverCommandDecorator
+TheoremToolCommand
+TheoremToolCommandDecorator
+TheoremToolThread
+nltk.inference.discourse module
+CfgReadingCommand
+DiscourseTester
+DrtGlueReadingCommand
+ReadingCommand
+demo()
+discourse_demo()
+drt_discourse_demo()
+load_fol()
+spacer()
+nltk.inference.mace module
+Mace
+MaceCommand
+decode_result()
+demo()
+spacer()
+test_build_model()
+test_make_relation_set()
+test_model_found()
+test_transform_output()
+nltk.inference.nonmonotonic module
+ClosedDomainProver
+ClosedWorldProver
+PredHolder
+ProverParseError
+SetHolder
+UniqueNamesProver
+closed_domain_demo()
+closed_world_demo()
+combination_prover_demo()
+default_reasoning_demo()
+demo()
+get_domain()
+print_proof()
+unique_names_demo()
+nltk.inference.prover9 module
+Prover9
+Prover9Command
+Prover9CommandParent
+Prover9Exception
+Prover9FatalException
+Prover9LimitExceededException
+Prover9Parent
+convert_to_prover9()
+demo()
+spacer()
+test_config()
+test_convert_to_prover9()
+test_prove()
+nltk.inference.resolution module
+BindingDict
+BindingException
+Clause
+DebugObject
+ProverParseError
+ResolutionProver
+ResolutionProverCommand
+UnificationException
+clausify()
+demo()
+most_general_unification()
+resolution_test()
+testResolutionProver()
+test_clausify()
+nltk.inference.tableau module
+Agenda
+Categories
+Debug
+ProverParseError
+TableauProver
+TableauProverCommand
+demo()
+tableau_test()
+testHigherOrderTableauProver()
+testTableauProver()
+Module contents
+nltk.lm package
+Submodules
+nltk.lm.api module
+LanguageModel
+Smoothing
+nltk.lm.counter module
+Language Model Counter
+NgramCounter
+nltk.lm.models module
+AbsoluteDiscountingInterpolated
+InterpolatedLanguageModel
+KneserNeyInterpolated
+Laplace
+Lidstone
+MLE
+StupidBackoff
+WittenBellInterpolated
+nltk.lm.preprocessing module
+flatten()
+padded_everygram_pipeline()
+padded_everygrams()
+nltk.lm.smoothing module
+AbsoluteDiscounting
+KneserNey
+WittenBell
+nltk.lm.util module
+log_base2()
+nltk.lm.vocabulary module
+Vocabulary
+Module contents
+NLTK Language Modeling Module.
+Preparing Data
+Training
+Using a Trained Model
+AbsoluteDiscountingInterpolated
+AbsoluteDiscountingInterpolated.__init__()
+KneserNeyInterpolated
+KneserNeyInterpolated.__init__()
+Laplace
+Laplace.__init__()
+Lidstone
+Lidstone.__init__()
+Lidstone.unmasked_score()
+MLE
+MLE.unmasked_score()
+NgramCounter
+NgramCounter.N()
+NgramCounter.__init__()
+NgramCounter.update()
+StupidBackoff
+StupidBackoff.__init__()
+StupidBackoff.unmasked_score()
+Vocabulary
+Vocabulary.__init__()
+Vocabulary.cutoff
+Vocabulary.lookup()
+Vocabulary.update()
+WittenBellInterpolated
+WittenBellInterpolated.__init__()
+nltk.metrics package
+Submodules
+nltk.metrics.agreement module
+AnnotationTask
+nltk.metrics.aline module
+Example usage
+R()
+V()
+align()
+delta()
+demo()
+diff()
+sigma_exp()
+sigma_skip()
+sigma_sub()
+nltk.metrics.association module
+BigramAssocMeasures
+ContingencyMeasures
+NGRAM
+NgramAssocMeasures
+QuadgramAssocMeasures
+TOTAL
+TrigramAssocMeasures
+UNIGRAMS
+fisher_exact()
+nltk.metrics.confusionmatrix module
+ConfusionMatrix
+demo()
+nltk.metrics.distance module
+binary_distance()
+custom_distance()
+demo()
+edit_distance()
+edit_distance_align()
+fractional_presence()
+interval_distance()
+jaccard_distance()
+jaro_similarity()
+jaro_winkler_similarity()
+masi_distance()
+presence()
+nltk.metrics.paice module
+Paice
+demo()
+get_words_from_dictionary()
+nltk.metrics.scores module
+accuracy()
+approxrand()
+demo()
+f_measure()
+log_likelihood()
+precision()
+recall()
+nltk.metrics.segmentation module
+ghd()
+pk()
+windowdiff()
+nltk.metrics.spearman module
+ranks_from_scores()
+ranks_from_sequence()
+spearman_correlation()
+Module contents
+nltk.misc package
+Submodules
+nltk.misc.babelfish module
+babelize_shell()
+nltk.misc.chomsky module
+generate_chomsky()
+nltk.misc.minimalset module
+MinimalSet
+nltk.misc.sort module
+bubble()
+demo()
+merge()
+quick()
+selection()
+nltk.misc.wordfinder module
+check()
+revword()
+step()
+word_finder()
+wordfinder()
+Module contents
+nltk.parse package
+Submodules
+nltk.parse.api module
+ParserI
+nltk.parse.bllip module
+BllipParser
+nltk.parse.chart module
+AbstractChartRule
+BottomUpChartParser
+BottomUpLeftCornerChartParser
+BottomUpPredictCombineRule
+BottomUpPredictRule
+CachedTopDownPredictRule
+Chart
+ChartParser
+ChartRuleI
+EdgeI
+EmptyPredictRule
+FilteredBottomUpPredictCombineRule
+FilteredSingleEdgeFundamentalRule
+FundamentalRule
+LeafEdge
+LeafInitRule
+LeftCornerChartParser
+SingleEdgeFundamentalRule
+SteppingChartParser
+TopDownChartParser
+TopDownInitRule
+TopDownPredictRule
+TreeEdge
+demo()
+demo_grammar()
+nltk.parse.corenlp module
+CoreNLPDependencyParser
+CoreNLPParser
+CoreNLPServer
+CoreNLPServerError
+GenericCoreNLPParser
+transform()
+try_port()
+nltk.parse.dependencygraph module
+DependencyGraph
+DependencyGraphError
+conll_demo()
+conll_file_demo()
+cycle_finding_demo()
+demo()
+dot2img()
+malt_demo()
+nltk.parse.earleychart module
+CompleteFundamentalRule
+CompleterRule
+EarleyChartParser
+FeatureCompleteFundamentalRule
+FeatureCompleterRule
+FeatureEarleyChartParser
+FeatureIncrementalBottomUpChartParser
+FeatureIncrementalBottomUpLeftCornerChartParser
+FeatureIncrementalChart
+FeatureIncrementalChartParser
+FeatureIncrementalTopDownChartParser
+FeaturePredictorRule
+FeatureScannerRule
+FilteredCompleteFundamentalRule
+IncrementalBottomUpChartParser
+IncrementalBottomUpLeftCornerChartParser
+IncrementalChart
+IncrementalChartParser
+IncrementalLeftCornerChartParser
+IncrementalTopDownChartParser
+PredictorRule
+ScannerRule
+demo()
+nltk.parse.evaluate module
+DependencyEvaluator
+nltk.parse.featurechart module
+FeatureBottomUpChartParser
+FeatureBottomUpLeftCornerChartParser
+FeatureBottomUpPredictCombineRule
+FeatureBottomUpPredictRule
+FeatureChart
+FeatureChartParser
+FeatureEmptyPredictRule
+FeatureFundamentalRule
+FeatureSingleEdgeFundamentalRule
+FeatureTopDownChartParser
+FeatureTopDownInitRule
+FeatureTopDownPredictRule
+FeatureTreeEdge
+InstantiateVarsChart
+demo()
+demo_grammar()
+run_profile()
+nltk.parse.generate module
+demo()
+generate()
+nltk.parse.malt module
+MaltParser
+find_malt_model()
+find_maltparser()
+malt_regex_tagger()
+nltk.parse.nonprojectivedependencyparser module
+DemoScorer
+DependencyScorerI
+NaiveBayesDependencyScorer
+NonprojectiveDependencyParser
+ProbabilisticNonprojectiveParser
+demo()
+hall_demo()
+nonprojective_conll_parse_demo()
+rule_based_demo()
+nltk.parse.pchart module
+BottomUpProbabilisticChartParser
+InsideChartParser
+LongestChartParser
+ProbabilisticBottomUpInitRule
+ProbabilisticBottomUpPredictRule
+ProbabilisticFundamentalRule
+ProbabilisticLeafEdge
+ProbabilisticTreeEdge
+RandomChartParser
+SingleEdgeProbabilisticFundamentalRule
+UnsortedChartParser
+demo()
+nltk.parse.projectivedependencyparser module
+ChartCell
+DependencySpan
+ProbabilisticProjectiveDependencyParser
+ProjectiveDependencyParser
+arity_parse_demo()
+demo()
+projective_prob_parse_demo()
+projective_rule_parse_demo()
+nltk.parse.recursivedescent module
+RecursiveDescentParser
+SteppingRecursiveDescentParser
+demo()
+nltk.parse.shiftreduce module
+ShiftReduceParser
+SteppingShiftReduceParser
+demo()
+nltk.parse.stanford module
+GenericStanfordParser
+StanfordDependencyParser
+StanfordNeuralDependencyParser
+StanfordParser
+nltk.parse.transitionparser module
+Configuration
+Transition
+TransitionParser
+demo()
+nltk.parse.util module
+TestGrammar
+extract_test_sentences()
+load_parser()
+taggedsent_to_conll()
+taggedsents_to_conll()
+nltk.parse.viterbi module
+ViterbiParser
+demo()
+Module contents
+nltk.sem package
+Submodules
+nltk.sem.boxer module
+Usage
+AbstractBoxerDrs
+Boxer
+BoxerCard
+BoxerDrs
+BoxerDrsParser
+BoxerEq
+BoxerIndexed
+BoxerNamed
+BoxerNot
+BoxerOr
+BoxerOutputDrsParser
+BoxerPred
+BoxerProp
+BoxerRel
+BoxerWhq
+NltkDrtBoxerDrsInterpreter
+PassthroughBoxerDrsInterpreter
+UnparseableInputException
+nltk.sem.chat80 module
+Overview
+Reading Chat-80 Files
+Concepts
+Persistence
+Individuals and Lexical Items
+Concept
+binary_concept()
+cities2table()
+clause2concepts()
+concepts()
+label_indivs()
+main()
+make_lex()
+make_valuation()
+process_bundle()
+sql_demo()
+sql_query()
+unary_concept()
+val_dump()
+val_load()
+nltk.sem.cooper_storage module
+CooperStore
+demo()
+parse_with_bindops()
+nltk.sem.drt module
+AnaphoraResolutionException
+DRS
+DrsDrawer
+DrtAbstractVariableExpression
+DrtApplicationExpression
+DrtBinaryExpression
+DrtBooleanExpression
+DrtConcatenation
+DrtConstantExpression
+DrtEqualityExpression
+DrtEventVariableExpression
+DrtExpression
+DrtFunctionVariableExpression
+DrtIndividualVariableExpression
+DrtLambdaExpression
+DrtNegatedExpression
+DrtOrExpression
+DrtParser
+DrtProposition
+DrtTokens
+DrtVariableExpression()
+PossibleAntecedents
+demo()
+resolve_anaphora()
+test_draw()
+nltk.sem.drt_glue_demo module
+DrsWidget
+DrtGlueDemo
+demo()
+nltk.sem.evaluate module
+Assignment
+Error
+Model
+Undefined
+Valuation
+arity()
+demo()
+foldemo()
+folmodel()
+is_rel()
+propdemo()
+read_valuation()
+satdemo()
+set2rel()
+trace()
+nltk.sem.glue module
+DrtGlue
+DrtGlueDict
+DrtGlueFormula
+Glue
+GlueDict
+GlueFormula
+demo()
+nltk.sem.hole module
+Constants
+Constraint
+HoleSemantics
+hole_readings()
+nltk.sem.lfg module
+FStructure
+demo_read_depgraph()
+nltk.sem.linearlogic module
+ApplicationExpression
+AtomicExpression
+BindingDict
+ConstantExpression
+Expression
+ImpExpression
+LinearLogicApplicationException
+LinearLogicParser
+Tokens
+UnificationException
+VariableBindingException
+VariableExpression
+demo()
+nltk.sem.logic module
+AbstractVariableExpression
+AllExpression
+AndExpression
+AnyType
+ApplicationExpression
+BasicType
+BinaryExpression
+BooleanExpression
+ComplexType
+ConstantExpression
+EntityType
+EqualityExpression
+EventType
+EventVariableExpression
+ExistsExpression
+ExpectedMoreTokensException
+Expression
+FunctionVariableExpression
+IffExpression
+IllegalTypeException
+ImpExpression
+InconsistentTypeHierarchyException
+IndividualVariableExpression
+IotaExpression
+LambdaExpression
+LogicParser
+LogicalExpressionException
+NegatedExpression
+OrExpression
+QuantifiedExpression
+SubstituteBindingsI
+Tokens
+TruthValueType
+Type
+TypeException
+TypeResolutionException
+UnexpectedTokenException
+Variable
+VariableBinderExpression
+VariableExpression()
+binding_ops()
+boolean_ops()
+demo()
+demoException()
+demo_errors()
+equality_preds()
+is_eventvar()
+is_funcvar()
+is_indvar()
+printtype()
+read_logic()
+read_type()
+skolem_function()
+typecheck()
+unique_variable()
+nltk.sem.relextract module
+class_abbrev()
+clause()
+conllesp()
+conllned()
+descape_entity()
+extract_rels()
+ieer_headlines()
+in_demo()
+list2sym()
+ne_chunked()
+roles_demo()
+rtuple()
+semi_rel2reldict()
+tree2semi_rel()
+nltk.sem.skolemize module
+skolemize()
+to_cnf()
+nltk.sem.util module
+demo()
+demo_legacy_grammar()
+demo_model0()
+evaluate_sents()
+interpret_sents()
+parse_sents()
+read_sents()
+root_semrep()
+Module contents
+nltk.sentiment package
+Submodules
+nltk.sentiment.sentiment_analyzer module
+SentimentAnalyzer
+nltk.sentiment.util module
+demo_liu_hu_lexicon()
+demo_movie_reviews()
+demo_sent_subjectivity()
+demo_subjectivity()
+demo_tweets()
+demo_vader_instance()
+demo_vader_tweets()
+extract_bigram_feats()
+extract_unigram_feats()
+json2csv_preprocess()
+mark_negation()
+output_markdown()
+parse_tweets_set()
+split_train_test()
+timer()
+nltk.sentiment.vader module
+SentiText
+SentimentIntensityAnalyzer
+VaderConstants
+Module contents
+nltk.stem package
+Submodules
+nltk.stem.api module
+StemmerI
+nltk.stem.arlstem module
+ARLSTem
+nltk.stem.arlstem2 module
+ARLSTem2
+nltk.stem.cistem module
+Cistem
+nltk.stem.isri module
+ISRIStemmer
+nltk.stem.lancaster module
+LancasterStemmer
+nltk.stem.porter module
+PorterStemmer
+demo()
+nltk.stem.regexp module
+RegexpStemmer
+nltk.stem.rslp module
+RSLPStemmer
+nltk.stem.snowball module
+ArabicStemmer
+DanishStemmer
+DutchStemmer
+EnglishStemmer
+FinnishStemmer
+FrenchStemmer
+GermanStemmer
+HungarianStemmer
+ItalianStemmer
+NorwegianStemmer
+PorterStemmer
+PortugueseStemmer
+RomanianStemmer
+RussianStemmer
+SnowballStemmer
+SpanishStemmer
+SwedishStemmer
+demo()
+nltk.stem.util module
+prefix_replace()
+suffix_replace()
+nltk.stem.wordnet module
+WordNetLemmatizer
+Module contents
+nltk.tag package
+Submodules
+nltk.tag.api module
+FeaturesetTaggerI
+TaggerI
+nltk.tag.brill module
+BrillTagger
+Pos
+Word
+brill24()
+describe_template_sets()
+fntbl37()
+nltkdemo18()
+nltkdemo18plus()
+nltk.tag.brill_trainer module
+BrillTaggerTrainer
+nltk.tag.crf module
+CRFTagger
+nltk.tag.hmm module
+HiddenMarkovModelTagger
+HiddenMarkovModelTrainer
+demo()
+demo_bw()
+demo_pos()
+demo_pos_bw()
+load_pos()
+logsumexp2()
+nltk.tag.hunpos module
+HunposTagger
+nltk.tag.mapping module
+map_tag()
+tagset_mapping()
+nltk.tag.perceptron module
+AveragedPerceptron
+PerceptronTagger
+nltk.tag.senna module
+SennaChunkTagger
+SennaNERTagger
+SennaTagger
+nltk.tag.sequential module
+AffixTagger
+BigramTagger
+ClassifierBasedPOSTagger
+ClassifierBasedTagger
+ContextTagger
+DefaultTagger
+NgramTagger
+RegexpTagger
+SequentialBackoffTagger
+TrigramTagger
+UnigramTagger
+nltk.tag.stanford module
+StanfordNERTagger
+StanfordPOSTagger
+StanfordTagger
+nltk.tag.tnt module
+TnT
+basic_sent_chop()
+demo()
+demo2()
+demo3()
+nltk.tag.util module
+str2tuple()
+tuple2str()
+untag()
+Module contents
+pos_tag()
+pos_tag_sents()
+nltk.tbl package
+Submodules
+nltk.tbl.api module
+nltk.tbl.demo module
+corpus_size()
+demo()
+demo_error_analysis()
+demo_generated_templates()
+demo_high_accuracy_rules()
+demo_learning_curve()
+demo_multifeature_template()
+demo_multiposition_feature()
+demo_repr_rule_format()
+demo_serialize_tagger()
+demo_str_rule_format()
+demo_template_statistics()
+demo_verbose_rule_format()
+postag()
+nltk.tbl.erroranalysis module
+error_list()
+nltk.tbl.feature module
+Feature
+nltk.tbl.rule module
+Rule
+TagRule
+nltk.tbl.template module
+BrillTemplateI
+Template
+Module contents
+nltk.tokenize package
+Submodules
+nltk.tokenize.api module
+StringTokenizer
+TokenizerI
+nltk.tokenize.casual module
+TweetTokenizer
+casual_tokenize()
+reduce_lengthening()
+remove_handles()
+nltk.tokenize.destructive module
+MacIntyreContractions
+NLTKWordTokenizer
+nltk.tokenize.legality_principle module
+LegalitySyllableTokenizer
+nltk.tokenize.mwe module
+MWETokenizer
+nltk.tokenize.nist module
+NISTTokenizer
+nltk.tokenize.punkt module
+PunktBaseClass
+PunktLanguageVars
+PunktParameters
+PunktSentenceTokenizer
+PunktToken
+PunktTokenizer
+PunktTrainer
+demo()
+format_debug_decision()
+load_punkt_params()
+save_punkt_params()
+nltk.tokenize.regexp module
+BlanklineTokenizer
+RegexpTokenizer
+WhitespaceTokenizer
+WordPunctTokenizer
+blankline_tokenize()
+regexp_tokenize()
+wordpunct_tokenize()
+nltk.tokenize.repp module
+ReppTokenizer
+nltk.tokenize.sexpr module
+SExprTokenizer
+sexpr_tokenize()
+nltk.tokenize.simple module
+CharTokenizer
+LineTokenizer
+SpaceTokenizer
+TabTokenizer
+line_tokenize()
+nltk.tokenize.sonority_sequencing module
+SyllableTokenizer
+nltk.tokenize.stanford module
+StanfordTokenizer
+nltk.tokenize.stanford_segmenter module
+StanfordSegmenter
+nltk.tokenize.texttiling module
+TextTilingTokenizer
+TokenSequence
+TokenTableField
+demo()
+smooth()
+nltk.tokenize.toktok module
+ToktokTokenizer
+nltk.tokenize.treebank module
+TreebankWordDetokenizer
+TreebankWordTokenizer
+nltk.tokenize.util module
+CJKChars
+align_tokens()
+is_cjk()
+regexp_span_tokenize()
+spans_to_relative()
+string_span_tokenize()
+xml_escape()
+xml_unescape()
+Module contents
+sent_tokenize()
+word_tokenize()
+nltk.translate package
+Submodules
+nltk.translate.api module
+AlignedSent
+Alignment
+PhraseTable
+PhraseTableEntry
+nltk.translate.bleu_score module
+Fraction
+SmoothingFunction
+brevity_penalty()
+closest_ref_length()
+corpus_bleu()
+modified_precision()
+sentence_bleu()
+nltk.translate.chrf_score module
+chrf_precision_recall_fscore_support()
+corpus_chrf()
+sentence_chrf()
+nltk.translate.gale_church module
+LanguageIndependent
+align_blocks()
+align_log_prob()
+align_texts()
+erfcc()
+norm_cdf()
+norm_logsf()
+parse_token_stream()
+split_at()
+trace()
+nltk.translate.gdfa module
+grow_diag_final_and()
+nltk.translate.gleu_score module
+corpus_gleu()
+sentence_gleu()
+nltk.translate.ibm1 module
+Notations
+References
+IBMModel1
+nltk.translate.ibm2 module
+Notations
+References
+IBMModel2
+Model2Counts
+nltk.translate.ibm3 module
+Notations
+References
+IBMModel3
+Model3Counts
+nltk.translate.ibm4 module
+Terminology
+Notations
+References
+IBMModel4
+Model4Counts
+nltk.translate.ibm5 module
+Terminology
+Notations
+References
+IBMModel5
+Model5Counts
+Slots
+nltk.translate.ibm_model module
+AlignmentInfo
+Counts
+IBMModel
+longest_target_sentence_length()
+nltk.translate.lepor module
+alignment()
+corpus_lepor()
+harmonic()
+length_penalty()
+ngram_positional_penalty()
+sentence_lepor()
+nltk.translate.meteor_score module
+align_words()
+exact_match()
+meteor_score()
+single_meteor_score()
+stem_match()
+wordnetsyn_match()
+nltk.translate.metrics module
+alignment_error_rate()
+nltk.translate.nist_score module
+corpus_nist()
+nist_length_penalty()
+sentence_nist()
+nltk.translate.phrase_based module
+extract()
+phrase_extraction()
+nltk.translate.ribes_score module
+corpus_ribes()
+find_increasing_sequences()
+kendall_tau()
+position_of_ngram()
+sentence_ribes()
+spearman_rho()
+word_rank_alignment()
+nltk.translate.stack_decoder module
+StackDecoder
+Module contents
+nltk.tree package
+Submodules
+nltk.tree.immutable module
+ImmutableMultiParentedTree
+ImmutableParentedTree
+ImmutableProbabilisticTree
+ImmutableTree
+nltk.tree.parented module
+MultiParentedTree
+ParentedTree
+nltk.tree.parsing module
+bracket_parse()
+sinica_parse()
+nltk.tree.prettyprinter module
+TreePrettyPrinter
+nltk.tree.probabilistic module
+ProbabilisticTree
+nltk.tree.transforms module
+chomsky_normal_form()
+collapse_unary()
+un_chomsky_normal_form()
+nltk.tree.tree module
+Tree
+Module contents
+ImmutableMultiParentedTree
+ImmutableParentedTree
+ImmutableProbabilisticTree
+ImmutableProbabilisticTree.__init__()
+ImmutableProbabilisticTree.convert()
+ImmutableProbabilisticTree.copy()
+ImmutableTree
+ImmutableTree.__init__()
+ImmutableTree.append()
+ImmutableTree.extend()
+ImmutableTree.pop()
+ImmutableTree.remove()
+ImmutableTree.reverse()
+ImmutableTree.set_label()
+ImmutableTree.sort()
+MultiParentedTree
+MultiParentedTree.__init__()
+MultiParentedTree.left_siblings()
+MultiParentedTree.parent_indices()
+MultiParentedTree.parents()
+MultiParentedTree.right_siblings()
+MultiParentedTree.roots()
+MultiParentedTree.treepositions()
+ParentedTree
+ParentedTree.__init__()
+ParentedTree.copy()
+ParentedTree.left_sibling()
+ParentedTree.parent()
+ParentedTree.parent_index()
+ParentedTree.right_sibling()
+ParentedTree.root()
+ParentedTree.treeposition()
+ProbabilisticTree
+ProbabilisticTree.__init__()
+ProbabilisticTree.convert()
+ProbabilisticTree.copy()
+Tree
+Tree.__init__()
+Tree.chomsky_normal_form()
+Tree.collapse_unary()
+Tree.convert()
+Tree.copy()
+Tree.draw()
+Tree.flatten()
+Tree.freeze()
+Tree.fromlist()
+Tree.fromstring()
+Tree.height()
+Tree.label()
+Tree.leaf_treeposition()
+Tree.leaves()
+Tree.node
+Tree.pformat()
+Tree.pformat_latex_qtree()
+Tree.pos()
+Tree.pprint()
+Tree.pretty_print()
+Tree.productions()
+Tree.set_label()
+Tree.subtrees()
+Tree.treeposition_spanning_leaves()
+Tree.treepositions()
+Tree.un_chomsky_normal_form()
+TreePrettyPrinter
+TreePrettyPrinter.__init__()
+TreePrettyPrinter.nodecoords()
+TreePrettyPrinter.svg()
+TreePrettyPrinter.text()
+bracket_parse()
+chomsky_normal_form()
+collapse_unary()
+sinica_parse()
+un_chomsky_normal_form()
+nltk.twitter package
+Submodules
+nltk.twitter.api module
+BasicTweetHandler
+LocalTimezoneOffsetWithUTC
+TweetHandlerI
+nltk.twitter.common module
+extract_fields()
+get_header_field_list()
+json2csv()
+json2csv_entities()
+nltk.twitter.twitter_demo module
+nltk.twitter.twitterclient module
+nltk.twitter.util module
+Module contents
+Submodules
+nltk.book module
+sents()
+texts()
+nltk.cli module
+nltk.collections module
+AbstractLazySequence
+AbstractLazySequence.count()
+AbstractLazySequence.index()
+AbstractLazySequence.iterate_from()
+LazyConcatenation
+LazyConcatenation.__init__()
+LazyConcatenation.iterate_from()
+LazyEnumerate
+LazyEnumerate.__init__()
+LazyIteratorList
+LazyIteratorList.__init__()
+LazyIteratorList.iterate_from()
+LazyMap
+LazyMap.__init__()
+LazyMap.iterate_from()
+LazySubsequence
+LazySubsequence.MIN_SIZE
+LazySubsequence.__init__()
+LazySubsequence.__new__()
+LazySubsequence.iterate_from()
+LazyZip
+LazyZip.__init__()
+LazyZip.iterate_from()
+OrderedDict
+OrderedDict.__init__()
+OrderedDict.clear()
+OrderedDict.copy()
+OrderedDict.items()
+OrderedDict.keys()
+OrderedDict.popitem()
+OrderedDict.setdefault()
+OrderedDict.update()
+OrderedDict.values()
+Trie
+Trie.LEAF
+Trie.__init__()
+Trie.insert()
+nltk.collocations module
+BigramCollocationFinder
+BigramCollocationFinder.__init__()
+BigramCollocationFinder.default_ws
+BigramCollocationFinder.from_words()
+BigramCollocationFinder.score_ngram()
+QuadgramCollocationFinder
+QuadgramCollocationFinder.__init__()
+QuadgramCollocationFinder.default_ws
+QuadgramCollocationFinder.from_words()
+QuadgramCollocationFinder.score_ngram()
+TrigramCollocationFinder
+TrigramCollocationFinder.__init__()
+TrigramCollocationFinder.bigram_finder()
+TrigramCollocationFinder.default_ws
+TrigramCollocationFinder.from_words()
+TrigramCollocationFinder.score_ngram()
+nltk.compat module
+add_py3_data()
+py3_data()
+nltk.data module
+AUTO_FORMATS
+BufferedGzipFile()
+FORMATS
+FileSystemPathPointer
+FileSystemPathPointer.__init__()
+FileSystemPathPointer.file_size()
+FileSystemPathPointer.join()
+FileSystemPathPointer.open()
+FileSystemPathPointer.path
+GzipFileSystemPathPointer
+GzipFileSystemPathPointer.open()
+LazyLoader
+LazyLoader.__init__()
+OpenOnDemandZipFile
+OpenOnDemandZipFile.__init__()
+OpenOnDemandZipFile.read()
+OpenOnDemandZipFile.write()
+OpenOnDemandZipFile.writestr()
+PathPointer
+PathPointer.file_size()
+PathPointer.join()
+PathPointer.open()
+SeekableUnicodeStreamReader
+SeekableUnicodeStreamReader.DEBUG
+SeekableUnicodeStreamReader.__init__()
+SeekableUnicodeStreamReader.bytebuffer
+SeekableUnicodeStreamReader.char_seek_forward()
+SeekableUnicodeStreamReader.close()
+SeekableUnicodeStreamReader.closed
+SeekableUnicodeStreamReader.decode
+SeekableUnicodeStreamReader.discard_line()
+SeekableUnicodeStreamReader.encoding
+SeekableUnicodeStreamReader.errors
+SeekableUnicodeStreamReader.linebuffer
+SeekableUnicodeStreamReader.mode
+SeekableUnicodeStreamReader.name
+SeekableUnicodeStreamReader.next()
+SeekableUnicodeStreamReader.read()
+SeekableUnicodeStreamReader.readline()
+SeekableUnicodeStreamReader.readlines()
+SeekableUnicodeStreamReader.seek()
+SeekableUnicodeStreamReader.stream
+SeekableUnicodeStreamReader.tell()
+SeekableUnicodeStreamReader.xreadlines()
+clear_cache()
+find()
+load()
+path
+retrieve()
+show_cfg()
+nltk.decorators module
+decorator()
+getinfo()
+new_wrapper()
+nltk.downloader module
+Downloading Packages
+Download Directory
+NLTK Download Server
+Collection
+Collection.__init__()
+Collection.children
+Collection.fromxml()
+Collection.id
+Collection.name
+Collection.packages
+Downloader
+Downloader.DEFAULT_URL
+Downloader.INDEX_TIMEOUT
+Downloader.INSTALLED
+Downloader.NOT_INSTALLED
+Downloader.PARTIAL
+Downloader.STALE
+Downloader.__init__()
+Downloader.clear_status_cache()
+Downloader.collections()
+Downloader.corpora()
+Downloader.default_download_dir()
+Downloader.download()
+Downloader.download_dir
+Downloader.incr_download()
+Downloader.index()
+Downloader.info()
+Downloader.is_installed()
+Downloader.is_stale()
+Downloader.list()
+Downloader.models()
+Downloader.packages()
+Downloader.status()
+Downloader.update()
+Downloader.url
+Downloader.xmlinfo()
+DownloaderGUI
+DownloaderGUI.COLUMNS
+DownloaderGUI.COLUMN_WEIGHTS
+DownloaderGUI.COLUMN_WIDTHS
+DownloaderGUI.DEFAULT_COLUMN_WIDTH
+DownloaderGUI.HELP
+DownloaderGUI.INITIAL_COLUMNS
+DownloaderGUI.__init__()
+DownloaderGUI.about()
+DownloaderGUI.c
+DownloaderGUI.destroy()
+DownloaderGUI.help()
+DownloaderGUI.mainloop()
+DownloaderMessage
+DownloaderShell
+DownloaderShell.__init__()
+DownloaderShell.run()
+ErrorMessage
+ErrorMessage.__init__()
+FinishCollectionMessage
+FinishCollectionMessage.__init__()
+FinishDownloadMessage
+FinishDownloadMessage.__init__()
+FinishPackageMessage
+FinishPackageMessage.__init__()
+FinishUnzipMessage
+FinishUnzipMessage.__init__()
+Package
+Package.__init__()
+Package.author
+Package.checksum
+Package.contact
+Package.copyright
+Package.filename
+Package.fromxml()
+Package.id
+Package.license
+Package.name
+Package.size
+Package.subdir
+Package.svn_revision
+Package.unzip
+Package.unzipped_size
+Package.url
+ProgressMessage
+ProgressMessage.__init__()
+SelectDownloadDirMessage
+SelectDownloadDirMessage.__init__()
+StaleMessage
+StaleMessage.__init__()
+StartCollectionMessage
+StartCollectionMessage.__init__()
+StartDownloadMessage
+StartDownloadMessage.__init__()
+StartPackageMessage
+StartPackageMessage.__init__()
+StartUnzipMessage
+StartUnzipMessage.__init__()
+UpToDateMessage
+UpToDateMessage.__init__()
+build_index()
+download()
+download_gui()
+download_shell()
+md5_hexdigest()
+sha256_hexdigest()
+unzip()
+update()
+nltk.featstruct module
+Lightweight Feature Structures
+FeatDict
+FeatDict.__init__()
+FeatDict.clear()
+FeatDict.get()
+FeatDict.has_key()
+FeatDict.pop()
+FeatDict.popitem()
+FeatDict.setdefault()
+FeatDict.update()
+FeatList
+FeatList.__init__()
+FeatList.append()
+FeatList.extend()
+FeatList.insert()
+FeatList.pop()
+FeatList.remove()
+FeatList.reverse()
+FeatList.sort()
+FeatStruct
+FeatStruct.__new__()
+FeatStruct.copy()
+FeatStruct.cyclic()
+FeatStruct.equal_values()
+FeatStruct.freeze()
+FeatStruct.frozen()
+FeatStruct.remove_variables()
+FeatStruct.rename_variables()
+FeatStruct.retract_bindings()
+FeatStruct.substitute_bindings()
+FeatStruct.subsumes()
+FeatStruct.unify()
+FeatStruct.variables()
+FeatStruct.walk()
+FeatStructReader
+FeatStructReader.VALUE_HANDLERS
+FeatStructReader.__init__()
+FeatStructReader.fromstring()
+FeatStructReader.read_app_value()
+FeatStructReader.read_fstruct_value()
+FeatStructReader.read_int_value()
+FeatStructReader.read_logic_value()
+FeatStructReader.read_partial()
+FeatStructReader.read_set_value()
+FeatStructReader.read_str_value()
+FeatStructReader.read_sym_value()
+FeatStructReader.read_tuple_value()
+FeatStructReader.read_value()
+FeatStructReader.read_var_value()
+Feature
+Feature.__init__()
+Feature.default
+Feature.display
+Feature.name
+Feature.read_value()
+Feature.unify_base_values()
+RangeFeature
+RangeFeature.RANGE_RE
+RangeFeature.read_value()
+RangeFeature.unify_base_values()
+SlashFeature
+SlashFeature.read_value()
+conflicts()
+subsumes()
+unify()
+nltk.grammar module
+CFG
+CFG.__init__()
+CFG.binarize()
+CFG.check_coverage()
+CFG.chomsky_normal_form()
+CFG.eliminate_start()
+CFG.fromstring()
+CFG.is_binarised()
+CFG.is_chomsky_normal_form()
+CFG.is_flexible_chomsky_normal_form()
+CFG.is_leftcorner()
+CFG.is_lexical()
+CFG.is_nonempty()
+CFG.is_nonlexical()
+CFG.leftcorner_parents()
+CFG.leftcorners()
+CFG.max_len()
+CFG.min_len()
+CFG.productions()
+CFG.remove_mixed_rules()
+CFG.remove_unitary_rules()
+CFG.start()
+DependencyGrammar
+DependencyGrammar.__init__()
+DependencyGrammar.contains()
+DependencyGrammar.fromstring()
+DependencyProduction
+Nonterminal
+Nonterminal.__init__()
+Nonterminal.symbol()
+PCFG
+PCFG.EPSILON
+PCFG.__init__()
+PCFG.fromstring()
+ProbabilisticDependencyGrammar
+ProbabilisticDependencyGrammar.__init__()
+ProbabilisticDependencyGrammar.contains()
+ProbabilisticProduction
+ProbabilisticProduction.__init__()
+Production
+Production.__init__()
+Production.is_lexical()
+Production.is_nonlexical()
+Production.lhs()
+Production.rhs()
+induce_pcfg()
+nonterminals()
+read_grammar()
+nltk.help module
+brown_tagset()
+claws5_tagset()
+upenn_tagset()
+nltk.internals module
+Counter
+Counter.__init__()
+Counter.get()
+Deprecated
+Deprecated.__new__()
+ElementWrapper
+ElementWrapper.__init__()
+ElementWrapper.__new__()
+ElementWrapper.find()
+ElementWrapper.findall()
+ElementWrapper.getchildren()
+ElementWrapper.getiterator()
+ElementWrapper.makeelement()
+ElementWrapper.unwrap()
+ReadError
+ReadError.__init__()
+config_java()
+deprecated()
+find_binary()
+find_binary_iter()
+find_dir()
+find_file()
+find_file_iter()
+find_jar()
+find_jar_iter()
+find_jars_within_path()
+import_from_stdlib()
+is_writable()
+java()
+overridden()
+raise_unorderable_types()
+read_int()
+read_number()
+read_str()
+slice_bounds()
+nltk.jsontags module
+JSONTaggedDecoder
+JSONTaggedDecoder.decode()
+JSONTaggedDecoder.decode_obj()
+JSONTaggedEncoder
+JSONTaggedEncoder.default()
+register_tag()
+nltk.langnames module
+inverse_dict()
+lang2q()
+langcode()
+langname()
+q2name()
+q2tag()
+tag2q()
+nltk.lazyimport module
+LazyModule
+LazyModule.__init__()
+nltk.probability module
+ConditionalFreqDist
+ConditionalFreqDist.N()
+ConditionalFreqDist.__init__()
+ConditionalFreqDist.conditions()
+ConditionalFreqDist.copy()
+ConditionalFreqDist.deepcopy()
+ConditionalFreqDist.plot()
+ConditionalFreqDist.tabulate()
+ConditionalProbDist
+ConditionalProbDist.__init__()
+ConditionalProbDistI
+ConditionalProbDistI.__init__()
+ConditionalProbDistI.conditions()
+CrossValidationProbDist
+CrossValidationProbDist.SUM_TO_ONE
+CrossValidationProbDist.__init__()
+CrossValidationProbDist.discount()
+CrossValidationProbDist.freqdists()
+CrossValidationProbDist.prob()
+CrossValidationProbDist.samples()
+DictionaryConditionalProbDist
+DictionaryConditionalProbDist.__init__()
+DictionaryProbDist
+DictionaryProbDist.__init__()
+DictionaryProbDist.logprob()
+DictionaryProbDist.max()
+DictionaryProbDist.prob()
+DictionaryProbDist.samples()
+ELEProbDist
+ELEProbDist.__init__()
+FreqDist
+FreqDist.B()
+FreqDist.N()
+FreqDist.Nr()
+FreqDist.__init__()
+FreqDist.copy()
+FreqDist.freq()
+FreqDist.hapaxes()
+FreqDist.max()
+FreqDist.pformat()
+FreqDist.plot()
+FreqDist.pprint()
+FreqDist.r_Nr()
+FreqDist.setdefault()
+FreqDist.tabulate()
+FreqDist.update()
+HeldoutProbDist
+HeldoutProbDist.SUM_TO_ONE
+HeldoutProbDist.__init__()
+HeldoutProbDist.base_fdist()
+HeldoutProbDist.discount()
+HeldoutProbDist.heldout_fdist()
+HeldoutProbDist.max()
+HeldoutProbDist.prob()
+HeldoutProbDist.samples()
+ImmutableProbabilisticMixIn
+ImmutableProbabilisticMixIn.set_logprob()
+ImmutableProbabilisticMixIn.set_prob()
+KneserNeyProbDist
+KneserNeyProbDist.__init__()
+KneserNeyProbDist.discount()
+KneserNeyProbDist.max()
+KneserNeyProbDist.prob()
+KneserNeyProbDist.samples()
+KneserNeyProbDist.set_discount()
+LaplaceProbDist
+LaplaceProbDist.__init__()
+LidstoneProbDist
+LidstoneProbDist.SUM_TO_ONE
+LidstoneProbDist.__init__()
+LidstoneProbDist.discount()
+LidstoneProbDist.freqdist()
+LidstoneProbDist.max()
+LidstoneProbDist.prob()
+LidstoneProbDist.samples()
+MLEProbDist
+MLEProbDist.__init__()
+MLEProbDist.freqdist()
+MLEProbDist.max()
+MLEProbDist.prob()
+MLEProbDist.samples()
+MutableProbDist
+MutableProbDist.__init__()
+MutableProbDist.logprob()
+MutableProbDist.max()
+MutableProbDist.prob()
+MutableProbDist.samples()
+MutableProbDist.update()
+ProbDistI
+ProbDistI.SUM_TO_ONE
+ProbDistI.__init__()
+ProbDistI.discount()
+ProbDistI.generate()
+ProbDistI.logprob()
+ProbDistI.max()
+ProbDistI.prob()
+ProbDistI.samples()
+ProbabilisticMixIn
+ProbabilisticMixIn.__init__()
+ProbabilisticMixIn.logprob()
+ProbabilisticMixIn.prob()
+ProbabilisticMixIn.set_logprob()
+ProbabilisticMixIn.set_prob()
+SimpleGoodTuringProbDist
+SimpleGoodTuringProbDist.SUM_TO_ONE
+SimpleGoodTuringProbDist.__init__()
+SimpleGoodTuringProbDist.check()
+SimpleGoodTuringProbDist.discount()
+SimpleGoodTuringProbDist.find_best_fit()
+SimpleGoodTuringProbDist.freqdist()
+SimpleGoodTuringProbDist.max()
+SimpleGoodTuringProbDist.prob()
+SimpleGoodTuringProbDist.samples()
+SimpleGoodTuringProbDist.smoothedNr()
+UniformProbDist
+UniformProbDist.__init__()
+UniformProbDist.max()
+UniformProbDist.prob()
+UniformProbDist.samples()
+WittenBellProbDist
+WittenBellProbDist.__init__()
+WittenBellProbDist.discount()
+WittenBellProbDist.freqdist()
+WittenBellProbDist.max()
+WittenBellProbDist.prob()
+WittenBellProbDist.samples()
+add_logs()
+entropy()
+log_likelihood()
+sum_logs()
+nltk.tabdata module
+MaxentDecoder
+MaxentDecoder.tupkey2dict()
+MaxentEncoder
+MaxentEncoder.tupdict2tab()
+PunktDecoder
+PunktDecoder.tab2intdict()
+TabDecoder
+TabDecoder.tab2dict()
+TabDecoder.tab2ivdict()
+TabDecoder.tab2tup()
+TabDecoder.tab2tups()
+TabDecoder.txt2list()
+TabDecoder.txt2set()
+TabEncoder
+TabEncoder.dict2tab()
+TabEncoder.ivdict2tab()
+TabEncoder.list2txt()
+TabEncoder.set2txt()
+TabEncoder.tup2tab()
+TabEncoder.tups2tab()
+rm_nl()
+nltk.text module
+ConcordanceIndex
+ConcordanceIndex.__init__()
+ConcordanceIndex.find_concordance()
+ConcordanceIndex.offsets()
+ConcordanceIndex.print_concordance()
+ConcordanceIndex.tokens()
+ContextIndex
+ContextIndex.__init__()
+ContextIndex.common_contexts()
+ContextIndex.similar_words()
+ContextIndex.tokens()
+ContextIndex.word_similarity_dict()
+Text
+Text.__init__()
+Text.collocation_list()
+Text.collocations()
+Text.common_contexts()
+Text.concordance()
+Text.concordance_list()
+Text.count()
+Text.dispersion_plot()
+Text.findall()
+Text.generate()
+Text.index()
+Text.plot()
+Text.readability()
+Text.similar()
+Text.vocab()
+TextCollection
+TextCollection.__init__()
+TextCollection.idf()
+TextCollection.tf()
+TextCollection.tf_idf()
+TokenSearcher
+TokenSearcher.__init__()
+TokenSearcher.findall()
+nltk.tgrep module
+TGrep search implementation for NLTK trees
+Usage
+Caveats:
+Known Issues:
+Implementation notes
+TgrepException
+ancestors()
+tgrep_compile()
+tgrep_nodes()
+tgrep_positions()
+tgrep_tokenize()
+treepositions_no_leaves()
+unique_ancestors()
+nltk.toolbox module
+StandardFormat
+StandardFormat.__init__()
+StandardFormat.close()
+StandardFormat.fields()
+StandardFormat.open()
+StandardFormat.open_string()
+StandardFormat.raw_fields()
+ToolboxData
+ToolboxData.parse()
+ToolboxSettings
+ToolboxSettings.__init__()
+ToolboxSettings.parse()
+add_blank_lines()
+add_default_fields()
+demo()
+remove_blanks()
+sort_fields()
+to_settings_string()
+to_sfm_string()
+nltk.treeprettyprinter module
+TreePrettyPrinter
+nltk.treetransforms module
+chomsky_normal_form()
+collapse_unary()
+un_chomsky_normal_form()
+nltk.util module
+Index
+Index.__init__()
+acyclic_branches_depth_first()
+acyclic_breadth_first()
+acyclic_depth_first()
+acyclic_dic2tree()
+bigrams()
+binary_search_file()
+breadth_first()
+choose()
+clean_html()
+clean_url()
+cut_string()
+edge_closure()
+edges2dot()
+elementtree_indent()
+everygrams()
+filestring()
+flatten()
+guess_encoding()
+in_idle()
+invert_dict()
+invert_graph()
+ngrams()
+pad_sequence()
+pairwise()
+parallelize_preprocess()
+pr()
+print_string()
+re_show()
+set_proxy()
+skipgrams()
+tokenwrap()
+transitive_closure()
+trigrams()
+unique_list()
+unweighted_minimum_spanning_dict()
+unweighted_minimum_spanning_digraph()
+unweighted_minimum_spanning_tree()
+nltk.wsd module
+lesk()
