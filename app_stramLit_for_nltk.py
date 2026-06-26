@@ -1,5 +1,17 @@
 import streamlit as st
 import nltk
+
+# Download all required NLTK data on startup (needed for Streamlit Cloud)
+for _pkg in [
+    "punkt", "punkt_tab", "averaged_perceptron_tagger",
+    "averaged_perceptron_tagger_eng", "maxent_ne_chunker",
+    "maxent_ne_chunker_tab", "words", "stopwords", "vader_lexicon",
+    "wordnet", "omw-1.4", "brown", "gutenberg", "movie_reviews",
+    "names", "universal_tagset", "tagsets", "conll2000",
+    "treebank", "inaugural", "webtext",
+]:
+    nltk.download(_pkg, quiet=True)
+
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
